@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-    <!-- Cabeçalho -->
+<!-- Cabeçalho -->
+
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Proporção de exibição do site na tela. (1.0 = 100%)-->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <!-- Geralmente não é ultilizado, informando o tipo de navegado que é compatível. -->
+    <meta name="description" content="Ecommerce"> <!-- Informa o propósito da página (melhora o SEO da página) -->
+    <meta name="keywords" content="Peças, Componetes, Placas"> <!-- Palavras chavaes para localização-->
+    <!-- <meta http-equiv="refresh" content="15; url=http://example.com">--> <!-- Não usado: rediriciona o usuário após 15s -->
+    <!-- Após 15 segundos a página te rediciona para outro site. -->
+    <title>Portfólio Teste</title>
+    <!-- Estilização -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
 </head>
+<!-- Corpo -->
 
+<body>
+    <!-- html semântica -->
+    <!-- cabeçalho do conteúdo -->
+    <header>
+        <h1>Portfólio Teste</h1> <!-- Nunca se usa mais de um título -->
+        <nav> <!-- Menu de navegação -->
+            <ul> <!-- Lista: <ol>: Ordened List ou <ul> Unordened List -->
+                <li><a href="$Sobre">Sobre mim</a></li>
+                <li><a href="$Projetos">Projetos</a></li>
+                <li><a href="$Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Corpo -->
+    <!-- conteúdo principal -->
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <figure><img src="imagens/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Logo do Linkedin" width="100">
+                <figcaption>Descrição: essa é uma logo do Linkedin em webp 980 x 980 px.</figcaption> <!-- Legenda da figura -->
+            </figure>
+            <p>Paragrafo: esta imagem foi baixada como exemplo de portfólio que poderá sofrer alterações ao decorrer do curso. Eu usei como base a logo do linkedin de exemplo, pois eu não tinha nenhuma foto para exemplo disponível no momento da aula.</p>
+        </section>
+        <section id="projetos">
+            <h2>Meus projetos</h2>
+            <article>
+                <h3>Projeto Integrador</h3>
+                <p>Exemplo de parágrafo: desenvolvido o projeto integrador do curso etc...</p>
+                <a href="#">Ver projeto.</a>
+            </article>
+            <article>
+                <h3>Projeto Comercial</h3>
+                <p>Exemplo de paragrafo: desenvolvido um sistema de acesso com uso de senhas...</p>
+                <a href="#">Ver projeto.</a>
+            </article>
+        </section>
+        <section id="cursos">
+            <h2>Cursos</h2>
+            <article>
+                <h3>Senac</h3>
+                <p>Técncico em Desenvolvimento de Sistemas:</p>
+                <a href="#">Ver Projetos Desenvolvidos.</a>
+            </article>
+            <article>
+                <h3>SenaiP</h3>
+                <p>Auxiliar Administrativo:</p>
+                <a href="#">Ver Projetos Desenvolvidos.</a>
+            </article>
+        </section>
+    </main>
+    <!-- final do documento - rodape -->
+     <footer id="contato">
+        
+     </footer>
+</body>
+
 </html>
