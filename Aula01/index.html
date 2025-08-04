@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Scripts -->
 </head>
-<!-- Corpo -->
 
+<!-- Corpo -->
 <body>
     <!-- html semântica -->
     <!-- cabeçalho do conteúdo -->
     <header>
-        <h1>Portfólio Teste</h1> <!-- Nunca se usa mais de um título -->
+        <!-- css inline: usado na linha dentro da tag -->
+        <h1>Portfólio do Marcell</h1> <!-- Nunca se usa mais de um título -->
         <nav> <!-- Menu de navegação -->
             <ul> <!-- Lista: <ol>: Ordened List ou <ul> Unordened List -->
                 <li><a href="$Sobre">Sobre mim</a></li>
@@ -36,10 +37,14 @@
     <main>
         <section id="sobre">
             <h2>Sobre mim</h2>
-            <figure><img src="imagens/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Logo do Linkedin" width="100">
-                <figcaption>Descrição: essa é uma logo do Linkedin em webp 980 x 980 px.</figcaption> <!-- Legenda da figura -->
+            <figure><img src="imagens/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="Foto de Marcell" width="100">
+                <figcaption>Estudante de TI | Atualmente atuando como Treinador no McDonald's</figcaption> <!-- Legenda da figura -->
             </figure>
-            <p>Paragrafo: esta imagem foi baixada como exemplo de portfólio que poderá sofrer alterações ao decorrer do curso. Eu usei como base a logo do linkedin de exemplo, pois eu não tinha nenhuma foto para exemplo disponível no momento da aula.</p>
+            <p>
+                Atualmente me fromando em Técnico em Desenvolvimento de Sistemas no Senac Itaquera e trabalho no McDonald's provisóriamente até entrar no mercado de TI.
+                <br>Estou desenvolvendo um sistema de agendamento para profissionais da área da psicologia com o objetivo de facilitar o contato entre proficional e paciente.
+
+            </p>
         </section>
         <section id="projetos">
             <h2>Meus projetos</h2>
@@ -62,15 +67,39 @@
                 <a href="#">Ver Projetos Desenvolvidos.</a>
             </article>
             <article>
-                <h3>SenaiP</h3>
+                <h3>Senai</h3>
                 <p>Auxiliar Administrativo:</p>
                 <a href="#">Ver Projetos Desenvolvidos.</a>
             </article>
         </section>
     </main>
     <!-- final do documento - rodape -->
-     <footer id="contato">
-        
+    <h2>Contato e Localização</h2>
+    <footer id="contato">
+        <div>
+            <p><strong>Encontre-me:</strong></p>
+            <address>
+                São Paulo, SP - Brasil
+            </address>
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7944239480817!2d-46.45912348821978!3d-23.539895260717255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66bf22458913%3A0xecdac462b58a9475!2sSenac%20Itaquera!5e0!3m2!1spt-BR!2sbr!4v1754307790057!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Dica: ul>li*3 -->
+             <ul>
+                <li><a href="mailto:marcell.aecastro@senacsp.edu.br">E-mail</a></li>
+                <li><a href="https://linkedin.com/in/marcellaxel/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/devaxl64/" target="_blank">GitHub</a></li>
+             </ul>
+        </div>
+        <section>
+            <aside>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>Localização</figcaption>
+                </figure>
+            </aside>
+        </section>
+        <p>&copy;2025 Meu Portfólio</p>
      </footer>
 </body>
 
