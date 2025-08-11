@@ -1,0 +1,61 @@
+@import url(reset.css); /* limpeza de estilos aplicadas */
+
+/* importa uma fonte simples do google para melhorar a tipografia do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth; /* habilita a rolagem suave para a página */
+}
+
+/* comentários no css */
+
+    /* tipografia global */
+body{
+    /* --- Estilo Geral: --- */
+    font-family: 'Roboto', 'sans-serif'; /* fonte de Roboto do corpo(body) do site */
+    line-height: 1.6; /* espaçamento entre linhas para melhor leitura */
+    font-weight: 400; /* fonte regular (entre 200 e 400 é uma boa prática) */
+    background-color: #f4f7f6;
+}
+
+    /* Atividade: */
+.container{
+    background-color: #8d0000;
+    display: flex;
+    height: 90dvh;
+    padding: 5vh;
+    justify-content: center;
+    
+    /* border-radius: 1px; */
+}
+header{
+    background-color: #3700ff;
+    width: 100%;
+    height: 8vh;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    background-color: #fff;
+    width: 100%;
+    height: 8vh;
+}
+nav ul{
+    width: 100%;
+    height: 8vh;
+}
+nav ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.item-1, .item-2, .item-3{
+    color: #fff;
+    background: #3a0086;
+    display: flex;
+    width: 30%;
+    height: 3vh;
+    margin: 1px;
+    /* padding: 3px; */
+}

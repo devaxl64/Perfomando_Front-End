@@ -218,3 +218,39 @@ footer .mapa-container iframe{
     text-align: center; /* centraliza o texto */
     width: 100%; /* ocupar toda a área disponível */
 }
+
+/* Responsividade básica - com media Queries */
+@media(max-width: 768px){ /* Só passam a valer quando quando a tela estiver menor que os 'px's' inseridos */
+    header h1{
+        font-size: 2rem;
+
+    }
+    nav ul{
+        
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 10px 0 0 0;
+    }
+    main{
+        padding: 0 15px;
+    }
+    section{
+        padding: 1.5rem;
+    }
+    section h2{
+        font-size: 1.8rem;
+    }
+    footer .container,
+    footer ul li a{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .localizacao, 
+    footer .mapa-container{
+        flex-basis: 90%;
+        max-width: 90%;
+        text-align: center;
+    }
+}
