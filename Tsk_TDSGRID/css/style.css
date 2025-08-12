@@ -1,0 +1,84 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth; /* habilita a rolagem suave para a página */
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #f0f2f5;
+    color: #333;
+}
+.container{
+    display: grid;
+    height: 100vh; /* Ocupa altura toda do viewport */
+    grid-template-columns: 1fr; /* coluna única para começar */
+    grid-template-rows: auto 1fr auto; /* Altura do cabeçalho, conteúdo principa e rodapé */
+    grid-template-areas: "header" "main" "footer";
+    gap: 20px; /* espaço entre elementos do grid */
+    padding: 20px;
+}
+/* Atribui cada div à sua respectiva área nomeada */
+.header{
+    grid-area: header;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* grid para o conteúdo do cabeçalho */
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    /* grid-template-rows: ; */
+    grid-template-areas: "top banner";
+    align-items: center;
+    padding: 10px 20px;
+}
+.main{
+    grid-area: main;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.logo{
+    grid-area: logo;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.logo img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+.buscar{
+    grid-area: banner;
+}
+
+
+
+
+
+
+
+
