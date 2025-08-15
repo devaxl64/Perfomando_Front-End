@@ -41,15 +41,14 @@ body{
     background-color: #000;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 5px;
+    gap: 2px;
     
     /* Atividade de Galeria: */
     /* padding: 20px; */
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%; */
 }
 .footer {
     grid-area: footer;
@@ -118,19 +117,12 @@ body{
     width: 100%;
     height: 100%;
     background-color: rebeccapurple;
-    border-radius: 8px;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-
-    /* Ordem */
+    /* border-radius: 8px; */
+    
 }
 .item img{
-    /* overflow: hidden;
-    object-fit: cover; */
     width: 100%;
     height: 100%;
-    border-radius: 8px;
 }
 
 
