@@ -1,0 +1,128 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+.contaiter{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    padding: 5px;
+    background-color: #333;
+    margin: 0px 50px ;
+    padding: 20px;
+    /* border-radius: 8px; */
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    gap: 50px;
+}
+.menu li{
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;   
+    transition: opacity 45ms ease;
+}
+.menu li a:hover{
+    opacity: 0.7;
+    /* zoom: 1.1; */
+}
+
+.produtos{
+    display: grid;
+    background-color: #f1f1f1;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 50px;
+    gap: 20px;
+    border: 1px solid #333;
+    margin: 20px 50px;
+}
+.item{
+    display: grid;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+
+
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+footer .localizacao, 
+footer .mapa-container{
+    flex-basis: 45%; /* define a largura base para os dois itens por linha */
+    max-width: 45%; /* define a largura máxima */
+    margin-bottom: 1.5rem; /* (1.5rem = 24px) define espaçamento inferior */
+    box-sizing: border-box; /* inclui padding e borda na largura total */
+}
+footer .localizacao p, 
+footer .localizacao address{
+    margin-bottom: 10px; /* define espaçamento inferior */
+}
+footer #redes-sociais{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+footer #redes-sociais li{
+    margin-bottom: 8px;
+}
+footer #redes-sociais a{
+    color: #fff; /* cor do texto */
+    text-decoration: none;/* remove sublinhado do link */
+    transition: color 0.3s ease;
+    display: flex; /* para alinha ícone e texto */
+    align-items: center;
+}
+footer #redes-sociais a:hover{
+    color: #1abc9c;
+}
+footer #redes-sociais a img{
+    width: 20px; /* largura da imagem */
+    height: 20px; /* altura da imagem */
+    margin-right: 8px;
+    border-radius: 4px;
+    vertical-align: middle; /* alinha/centraliza os elementos na imagem*/
+}
+footer .mapa-container iframe{
+    width: 100%; /* usa 100% da largura disponível (largura diponível dentro da classe 'container') */
+    height: 250px; /* altura fixa de 300px */
+    border-radius: 8px; /* borda para o iframe */
+    box-shadow: 0 8px 8px rgba(255 , 255, 255, 0.3); /* sombra em volta do mapa */
+}
+.copyright{
+    margin-top: 2rem; /* 32px margem */
+    padding-top: 1rem; /* 16px preenchimento fora do conteúdo e dentro da margem */
+    border-top: 1px solid rgba(255 , 255, 255, 0.1);
+    font-size: 0.85rem; /* (13.6px) tamanho da fonte */
+    text-align: center; /* centraliza o texto */
+    width: 100%; /* ocupar toda a área disponível */
+}
