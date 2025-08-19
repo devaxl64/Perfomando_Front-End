@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importação do bootstrap sem instalar (HTML e CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Importação do bootstrap sem instalar (JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <title>Cafézin</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bold">Página do Café</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"></a>Sobre</li>
+                    <li class="nav-item"><a href="#contato" class="nav-link"></a>Contato</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="container mb-5 mt-4"> <!-- my-5 margem superior e inferior 48px (1rem*3=3rem) -->
+        <h1 class="text-center mb-4">Bem-vindo ao Cafézin Bootstrap 5!</h1>
+        <p class="text-center text-muted">Exemplo de layout responsivo com navbar, cards e rodapé.</p>
+        <!-- muted = diminui levemente o contraste da cor -->
+
+        <!-- Cards -->
+        <div class="row g-4 mt-4">
+
+            <!-- Imagens: -->
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/imagem.jpg" alt="imagem 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                            excepturi...
+                        </p>
+                        <a href="#" class="btn btn-dark">Saiba mais...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/imagem.jpg" alt="imagem 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                            excepturi...
+                        </p>
+                        <a href="#" class="btn btn-dark">Saiba mais...</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <img src="images/imagem.jpg" alt="imagem 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                            excepturi...
+                        </p>
+                        <a href="#" class="btn btn-dark">Saiba mais...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="mb-5 p-1"></div>
+    <!-- Rodapé -->
+        <footer class="bg-dark text-white text-center py-3 mt-4">
+            <div class="contato" id="contato">
+                <h5 class="fw-bold mt-2 mb-5">Contato</h5>
+                <div class="mb-3 mx-5">
+                    <label for="formControlEmail" class="form-label">Seu Email:</label>
+                    <input type="email" class="form-control" id="formControlEmail" placeholder="seu-email@examplo.com">
+                </div>
+                <div class="mb-3 mx-5">
+                    <label for="formControltitle" class="form-label">Assunto</label>
+                    <input type="tittle" class="form-control" id="formControltitle" placeholder="Assunto">
+                </div>
+                <div class="mb-3 mx-5">
+                    <label for="formControlText" class="form-label">Mensagem:</label>
+                    <textarea class="form-control" id="formControlText" rows="3" placeholder="Escreva a sua mensagem"></textarea>
+                </div>
+            </div>
+            <p class="mb-0"> &copy; 2025 Cafézin. </p>
+        </footer>
+    <!-- link bootstrap JS -->
+</body>
+
+</html>
