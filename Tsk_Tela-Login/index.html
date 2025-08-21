@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Login</title>
-</head>
+  </head>
 
-<body>
-    <div class="telaLogin">
-        <main>
-            <section>
-                <input id="email" name="email">
-                <input id="password" name="password">
-                <div id="button">
-                    <lu>
-                        <li><a href="#Login">Login</a></li>
-                        <li><a href="#Register">Registro</a></li>
-                        <li><a href="#ResetPass">Esqueci minha senha</a></li>
-                    </lu>
-                </div>
-            </section>
+  <body>
+    <main>
+      <div class="telaLogin">
+        <form>
+            <div class="camp-email">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="insira o seu e-mail"
+                required
+              />
+            </div>
+            <div class="camp-password">
+              <label for="password">Senha: </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder=" insira a sua senha"
+                required
+              />
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btn-login">Login</button>
+                <!-- <button type="submit" class="btn-register">Registrar</button> -->
+            </div>
+            <div class="links">
+                <a id="register" href="#register">Primeiro acesso</a>
+                <p>|</p>
+                <a id="resetPass" href="#resetPass">Esqueci minha senha</a>
+            </div>
+        </div>
+        </form>
 
-
-            <!-- Testes: -->
-
-        </main>
-        <footer>
-
-        </footer>
-    </div>
-</body>
-
+      <!-- Testes: -->
+    </main>
+    <footer></footer>
+  </body>
 </html>
