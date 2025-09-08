@@ -67,17 +67,22 @@ $nota3 = $_GET['nota3'] ?? null;
 <?php
 $media = ($nota1+$nota2+$nota3)/3;
 
-// preencher:-----------------
-// if ($media >= 7){
-//     echo "Aprovado!";
-// } elseif ($media >= 5) {
-//     echo "Recuperação!";
-// // } elseif ($media > 1){
-// //     echo "Reprovado!";
-// // } 
-// else{ 
-//     echo "Preecha todos os campos com notas acima, por favor.";
-// }
+if ($media >= 7){
+    echo "Nota: $media.";
+    echo "<br>";
+    echo "Aprovado!";
+} elseif ($media >= 5) {
+    echo "Nota: $media.";
+    echo "<br>";
+    echo "Recuperação!";
+} elseif ($media > 1){
+    echo "Nota: $media.";
+    echo "<br>";
+    echo "Reprovado!";
+} 
+else{ 
+    echo "Preecha todos os campos com notas acima, por favor.";
+}
 echo "<br>";
 echo "<br>";
 
