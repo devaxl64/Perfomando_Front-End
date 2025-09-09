@@ -5,7 +5,7 @@
 // 1. Declare uma variável inteira (ex: $idade) e imprima seu valor na tela.
 echo "1) <br>";
 $idade = 30;
-echo $idade;
+echo "Idade: $idade";
 echo "<br>";
 echo "<br>";
 
@@ -13,7 +13,7 @@ echo "<br>";
 echo "2) <br>";
 $nome = "Marcell";
 $sobrenome = "Castro";
-echo $nome." ".$sobrenome.".";
+echo "Nome: $nome, <br>Sobrenome: $sobrenome.";
 
 echo "<br>";
 echo "<br>";
@@ -43,7 +43,7 @@ $digitarNumero = $_GET['digitarNumero'] ?? null;
 </form>
 <?php
 if ($digitarNumero == null){
-    echo "Digite um número, por favor!";
+    echo "Digite um número acima, por favor!";
 } elseif ($digitarNumero % 2 == 0) {
     echo "Este número é PAR!";
 } elseif ($digitarNumero % 2 != 0) {
@@ -87,10 +87,64 @@ echo "<br>";
 echo "<br>";
 
 // 6. Solicite um número e use um laço de repetição (for ou while) para imprimir todos os números de 1 até o número informado.
+echo "6)";
+?>
+<form method="get">
+    Digite um número abaixo:
+    <br>
+    <input type="text" name="numero">
+    <input type="submit" value="Ok!">
+</form>
+<?php 
+if(isset($_GET['numero'])){
+    $numero = $_GET['numero'];
+
+    for ($i=1; $i <= $numero; $i++) { 
+        echo "<br> Número: $i";
+    }
+}
+echo "<br>";
+echo "<br>";
 
 // 7. Crie um laço que imprima todos os números pares de 0 a 20.
+echo "7)";
+echo "<br> Valores de 0 a 20: <br>";
+$valor20 = 20;
+for ($i=0; $i <= $valor20; $i++) { 
+        echo " $i,";
+    }
+echo "<br>";
+echo "<br>";
 
 // 8. Peça ao usuário para digitar uma senha. Use um laço while para continuar pedindo a senha até que a senha correta seja inserida.
+# Fiz com get para não ter que ficar excluíndo os cookies toda vez;
+
+#Ainda não consegui resolver::---------------------
+echo "8)";
+echo "<br> Senha: 1234<br>";
+?>
+<form method="get">
+    <input type="password" name="password">
+    <input type="submit" value="Ok!">
+</form>
+<?php 
+$senhaCorreta = 1234;
+$limit = 1;
+if ($senhaCorreta == isset($_GET['password'])) {
+    echo "Acesso liberado!";
+} else {
+    do {
+        ?>
+        <form method="get">
+            <input type="password" name="password">
+            <input type="submit" value="Ok!">
+        </form>
+        <?php 
+        
+    } while (isset($_GET['password']) == $senhaCorreta);
+}
+echo "<br>";
+echo "<br>";
 
 // 9. Crie um programa que some todos os números de 1 a 100 usando um laço for.
 
