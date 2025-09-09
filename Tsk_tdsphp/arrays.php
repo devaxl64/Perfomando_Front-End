@@ -28,8 +28,8 @@ echo "<br><br><br>";
 
 $formDados = [];
 if($_POST){
-    $formDados[] = ["nome"=>$_POST['nome']]; 
-    $formDados[] = ["telefone"=>$_POST['telefone']]; 
+    $formDados[] = ['nome'=>$_POST['nome']]; 
+    $formDados[] = ['telefone'=>$_POST['telefone']]; 
 
     // armazena o dado/cookie por 3600 segundos (1h):
     setcookie("formdados", json_encode($formDados), time() + 3600); 
