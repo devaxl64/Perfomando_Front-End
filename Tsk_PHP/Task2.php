@@ -340,50 +340,37 @@ echo "<br>";
 echo "<br>";
 
 // 18. Crie um laço de repetição aninhado para imprimir um padrão de asteriscos em formato de pirâmide.
-echo "16)";
+echo "18)";
 echo "<br> Pirâmide de asteíscos: <br> (INCOMPLETO) <br> ";
-// $ast=[5=>'*',5=>'*'];
-// for ($i = 1; $i <= 5; $i++) {
-//     echo "*";
-//     for ($j = 1; $j <= 4; $j++) {
-//         echo "*";
-//         echo "<br>";
-//         for ($k = 1; $k <= 3; $k++) {
-//             echo "*";
-//             echo "<br>";
-//             for ($l = 1; $l <= 2; $l++) {
-//                 echo "*";
-//                 echo "<br>";
-//                 for ($m = 1; $m <= 1; $m++) {
-//                     echo "*";
-//                     echo "<br>";
-//                 }
-//             }
-//         }
-//     }
-// }
 
-#Ajuda do GPT: (Analizar)
-$linhas = 5; // número de linhas da pirâmide
-
-for ($i = 1; $i <= $linhas; $i++) {
-
-    // 1º loop: imprime os espaços antes dos asteriscos
-    for ($espacos = $linhas - $i; $espacos > 0; $espacos--) {
-        echo "&nbsp;&nbsp;"; // espaço em HTML, duplica pra ficar proporcional
-    }
-
-    // 2º loop: imprime os asteriscos
-    for ($asteriscos = 1; $asteriscos <= (2 * $i - 1); $asteriscos++) {
-        echo "*";
-    }
-
-    echo "<br>"; // quebra de linha no HTML
-}
 echo "<br>";
 echo "<br>";
 
 // 19. Crie um programa que conte quantas vogais existem em uma string fornecida pelo usuário.
+echo "19)";
+echo "<br> Calculo de vogais:<br>(INCOMPLETO)<br> ";
+?>
+<form method="get">
+    <input type="text" name="texto">
+    <input type="submit" value="Ok!">
+</form>
+<?php
+
+if(isset($_GET['texto'])){
+    $qtdVogais=0;
+    $vogais = ['a','e','i','o','u'];
+    $textoo=strtolower($_GET['texto']);
+    for($i=0; $i < strlen(trim($textoo)); $i++){ // strlen = quantidade de letras do texto.
+        $letra = $textoo[$i];
+        if (in_array($letra, $vogais)) { // verifica se a letra que eu busco do array '$vogais' está no texto que do número equivalente ao $i.
+            $qtdVogais++;
+        }
+    }
+}
+
+echo "Palavra digitada: '" . ucfirst(trim($textoo)) . "'. Quantidade de vogais: " . $qtdVogais . ".";
+echo "<br>";
+echo "<br>";
 
 // 20. Peça ao usuário que digite vários nomes. Armazene-os em um array e, quando o usuário digitar "fim", imprima a lista completa de nomes.
 # Atividade de Console
