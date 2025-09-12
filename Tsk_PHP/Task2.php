@@ -356,11 +356,11 @@ echo "<br> Calculo de vogais:<br>(INCOMPLETO)<br> ";
 </form>
 <?php
 
-if(isset($_GET['texto'])){
-    $qtdVogais=0;
-    $vogais = ['a','e','i','o','u'];
-    $textoo=strtolower($_GET['texto']);
-    for($i=0; $i < strlen(trim($textoo)); $i++){ // strlen = quantidade de letras do texto.
+if (isset($_GET['texto'])) {
+    $qtdVogais = 0;
+    $vogais = ['a', 'e', 'i', 'o', 'u'];
+    $textoo = strtolower($_GET['texto']);
+    for ($i = 0; $i < strlen(trim($textoo)); $i++) { // strlen = quantidade de letras do texto.
         $letra = $textoo[$i];
         if (in_array($letra, $vogais)) { // verifica se a letra que eu busco do array '$vogais' está no texto que do número equivalente ao $i.
             $qtdVogais++;
@@ -372,7 +372,31 @@ echo "Palavra digitada: '" . ucfirst(trim($textoo)) . "'. Quantidade de vogais: 
 echo "<br>";
 echo "<br>";
 
-// 20. Peça ao usuário que digite vários nomes. Armazene-os em um array e, quando o usuário digitar "fim", imprima a lista completa de nomes.
-# Atividade de Console
 
+// Falta completar =========================================
+// Falta completar =========================================
+// Falta completar =========================================
+// 20. Peça ao usuário que digite vários nomes. Armazene-os em um array e, quando o usuário digitar "fim", imprima a lista completa de nomes.
+echo "20)";
+echo "<br> Lista de nomes:<br>(INCOMPLETO)<br> ";
+?>
+<form method="post">
+    <input type="text" name="nomes">
+    <input type="submit" value="Ok!">
+    <input type="submit" value="Exibir Nomes" name="exibir">
+</form>
+<?php
+
+if (isset($_POST['nomes'])) {
+    $nomes = [];
+    $nomes[] = ['nome'=>$_POST['nomes']];
+    if (isset($_POST['exibir'])) {
+        foreach ($nomes as $nome) {
+            echo "<br>" . $nome['nome'];
+        }
+    }
+}
+
+echo "<br>";
+echo "<br>";
 ?>
