@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está Hospedado no meu próprio server (Não recomendado: Pesado Muito se Escalável)</p>
+
+    <video controls width="560px" poster="images/poster.jpg">
+        <!-- Geralmente nesta ordem, do mais leve para o mais pesado. -->
+        <source src="media/meu-video.mp4" type="video/mp4">
+        <!-- <source src="media/meu-video.m4v" type="video/mp4"> -->
+        <source src="media/meu-video.webm" type="video/webm">
+        <!-- <source src="media/meu-video.ogv" type="video/ogg"> -->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo Vídeos do YT</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N07tLAHGJF8?si=C1wG7yIUo0qWc7X_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+<h1>Inserindo Vídeos do Vímeo</h1>
+<iframe src="https://player.vimeo.com/video/177118397?badge=0"
+    width="560" height="239" frameborder="0"
+    allow="autoplay"></iframe>
+
+</html>

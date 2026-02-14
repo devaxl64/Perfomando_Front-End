@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="foto-g flexivel">
+    </picture>
+
+    <h1>Audio</h1>
+
+    <p>Audios em HTML5</p>
+
+    <!-- MP3, WAV, OGG -->
+    <!-- <audio src="media/ChestBump-WolfOfWallstreet.mp3" controls autoplay></audio> -->
+    <audio preload="metadata" autoplay controls loop> <!-- não está funcionando bem o autoplay -->
+        <!-- preload="auto" carrega o audio todo antes de reproduzir, fica muito pesado  -->
+        <!-- preload="metadata" pega somente os dados, é leve, mas só começa a baixar a informação depois de um "play" do usuário -->
+       
+        <!-- seguindo a ordem, vai tentar carregar os áudios abaixo: -->
+        <source src="media/ChestBump-WolfOfWallstreet.mp3" type="audio/mpeg">
+        <source src="media/ChestBump-WolfOfWallstreet.ogg" type="audio/ogg">
+        <source src="media/ChestBump-WolfOfWallstreet.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reporduzir áudio.</p>
+        <a href="media/ChestBump-WolfOfWallstreet.mp3">Clique aqui para baixar o seu arquivo MP3</a>
+    </audio>
+</body>
+
+</html>
