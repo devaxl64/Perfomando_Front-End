@@ -3,51 +3,135 @@
 @font-face {
     font-family: 'idroid';
     src: url('../fonts/idroid.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
+    /* max-width: 100%; */
     margin: 0;
     background-color: #84E1AD;
 }
 header {
-    width: 100%;
+    
     background-image: linear-gradient(to bottom, #3CDA84, #22613F);
     color: white;
     padding: 20px;
 }
-header > h1, 
-header > h2 {
+header > h1 {
     text-align: center;
     color: white;
+    font-family: 'BebasNeue';
+    font-size: 4em;
+    text-shadow: 2px 2px 2px black
 }
-nav > a {
+header > p {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-bottom: 20px;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+header > nav > a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 15px;
-    
 }
-nav > a:hover {
+header > nav > a:hover {
     /* background-image: linear-gradient(to bottom, #3cda8313, #1854330a); */
     box-shadow: 0px 7px 5px #00000042;
 }
 main {
     background-color: white;
-    max-width: 1000px;
-    padding: 1px 15px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: justify;
+    padding: 1px 0px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.555);
+    border-radius: 0px 0px 10px 10px;
 }
 main > h1,
 main > h2 {
     font-family: 'idroid';
     color: #22613F;
+    margin-left: 15px;
+    padding: 1px 15px;
 }
 main > h2 {
     background-image: linear-gradient(to right, #3cda8362, white);
 }
-main > img {
-    
+main > p {
+    font-size: 1.2em;
+    margin: 20px;
+    text-indent: 30px;
+    color: #000000c9;
+}
+main > p > strong {
+    color: #22613F;
+}
+main > div {
+    display: flex;
+    justify-content: center;
+}
+main > div.video {
+    background-color: #22613F;
+    margin: 0px;
+    padding: 20px 0px;
+}
+main > section {
+    background-color: #C5EBD6;
+    margin: 20px;
+    border-radius: 20px;
+}
+main > section > h2 {
+    background-color: #2FA866;
+    color: white;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+main > section > p {
+    padding: 15px;
+    font-size: 1.2em;
+    text-indent: 30px;
+}
+section > div {
+    display: inline-block;
+    margin-right: 60px;
+}
+section > div > ul {
+    list-style: none;
+    padding-left: 15px;
+}
+p > a {
+    text-decoration: none;
+    color: #22613F;
+    font-weight: bold;
+
+}
+p > a::after {
+content: ' 🔗';
+} 
+footer {
+    margin: 0px;
+    background-color: #22613F;
+    color: white;
+    text-align: center;
+    padding: 1px;
 }
