@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estydos de iFrame</title>
+    <style>
+        /* em iframe a confg que fica são as de folha de estilo (em css) */
+        iframe {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Testando o uso de iframe</h1>
+    <p>
+      Acessando o site do cursoemvideo
+      <!-- por padrão um ifram é de 300x150 px -->
+      <iframe src="https://cursoemvideo.com" frameborder="0" height="500px" scrolling="no">
+        <a href="https://cursoemvideo.com" target="_blank"> (site do cursoemvideo)</a>
+      </iframe>
+      para aprender a programar
+    </p>
+    <p>
+      O site do Guanabara
+      <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+        <a href="https://gustavoguanabara.github.io" target="_blank"> (site do github dele)</a>
+      </iframe>
+      também é muito bom. (Mas não exibe devido a proteção do site).
+    </p>
+  </body>
+</html>
