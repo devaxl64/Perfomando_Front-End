@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de iframes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      iframe {
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda dolor
+      labore accusamus porro aut! Numquam dolorem quaerat illum ipsum quibusdam
+      mollitia doloremque cum nam exercitationem ab, vel, perferendis tempore?
+      Odit.
+    </p>
+
+    <ul>
+      <li>
+        <a href="paginas-extras/pg001.html" target="frame">Primeira página</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pg002.html" target="frame">Segunda página</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pg003.html" target="frame">Terceira página</a>
+      </li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad
+      voluptas quasi sed modi, placeat saepe repellendus debitis aspernatur
+      exercitationem rerum suscipit tenetur, eum facilis aliquid repudiandae
+      fugiat? Dignissimos, voluptates.
+    </p>
+    
+    <iframe id="tela" name="frame" 
+    srcdoc="<h1>Escolha uma das opções acima</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ratione!
+      Necessitatibus excepturi atque enim quibusdam est ipsum, praesentium
+      impedit magnam asperiores adipisci modi consequatur dolorum reiciendis
+      dicta ipsam voluptatem quis?
+    </p>
+    <img src='paginas-extras/images/poster.jpg' alt='Img-lobo-of-wall-street' width='400px'>" frameborder="0">
+    <!-- Como estes comandos estão dentro de aspas, a src tem que ser fieto em aspas simples -->
+      <p>Infelizmente o seu navegador não é compatível com isso.</p>
+    </iframe>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cum
+      placeat esse eligendi! Assumenda corporis nemo quidem repellendus commodi
+      dolor esse quam, aut natus perferendis exercitationem molestiae illum
+      totam est!
+    </p>
+  </body>
+</html>
