@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github de devaxl64</title>
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-        body {
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+      }
+      /* body {
             width: 80vw;
             height: 100vh;
             background: transparent url('images/tela-github.jpg') no-repeat;
@@ -18,10 +23,47 @@
             background-size: cover;
             border-left: 1px solid black;
             margin-bottom: 20px;
-        }
+        } */
+      div {
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        position: relative;
+      }
+      img#iphone13 {
+        object-fit: cover;
+        object-position: top center;
+        position: fixed;
+        width: 115%;
+        top: -9px;
+        left: -14px;
+        height: 27px;
+      }
+
+      img#tela {
+        padding-top: 18px;
+        position: center;
+        width: 100vw;
+      }
+      a {
+        display: block;
+        background-color: darkred;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: red;
+      }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div>
+      <img src="images/frame-iphone13.png" id="iphone13" alt="iphone13" />
+    </div>
+    <img src="images/tela-github.jpg" id="tela" alt="github-devaxl64" />
+    <a href="https://github.com/devaxl64" target="_blank">ACESSAR</a>
+  </body>
 </html>
