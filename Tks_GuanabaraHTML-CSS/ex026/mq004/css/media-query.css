@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* Todas as demais medias */
+
+/* 
+Typical Device Breakpoint (Recomendações do W3C)
+Pequenas Telas: Até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px 
+Desktop: 992px até 1200px  
+Grandes telas: acima de 1200px
+*/
+
+@media print { /* Imprimir */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../../images/back-print.jpg); /* Não imprime */
+    }
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Impresso através do github de devaxl64.';
+        text-decoration: overline;
+        font-size: 0.7em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    main > h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#phone {display: none;}    
+    img#print {display: block;}
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url(../../images/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* PC */
+    body {
+        background-image: url(../../images/back-pc.jpg);
+    }
+    img#phone {display: none;}
+    img#pc {display: block;}
+}
+
+@media screen and (min-width: 1200px) { /* Grandes telas */
+    /* Grandes telas */
+    body {
+        background-image: url(../../images/back-tv.jpg);
+        width: 700px;
+    }
+    img#phone {display: none;}
+    img#tv {display: block;}
+}
