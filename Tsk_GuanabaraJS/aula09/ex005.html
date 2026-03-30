@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt--BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos com DOM</h1>
+    <p>Aqui é o resultado</p>
+    <p>Usando <strong>DOM</strong> em JS.</p>
+    <div class="msg">Clique aqui</div>
+    <script>
+        var corpo = window.document.body;
+        // corpo.style.background = 'black';
+        
+        var p1 = window.document.getElementsByTagName('p')['0'];
+        window.document.write('Está escrito assim: ' + p1.innerText);
+        
+        // var d = window.document.getElementById('msg');
+        // d.style.background = 'gray';
+        // d.innerText = "Mensagem da div com o id \"msg\" alterado";
+
+        // var d = window.document.getElementsByName('msg')['0'];
+        // d.innerText = 'Por nome';
+
+        // var d = window.document.getElementsByClassName('msg')['0']
+        // d.innerText = "Por classe";
+        // obs: sempre que o "getElement's" for no plural, tem que selecionar o número da tag/marcação (Ex: ['0']).
+
+        var d = window.document.querySelector('div.msg'); // (id = #) (class = .)
+        d.style.color = 'blue';
+        d.style.background = 'gray';
+    </script>
+</body>
+</html>

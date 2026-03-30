@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DETRAN</title>
+  </head>
+  <body>
+    <h1>RADAR</h1>
+    Velocidade do veículo: <input type="number" name="txtvel" id="txtvel" /> Km/h.
+    <input type="button" value="Verificar" onclick="calc()" />
+    <div id="res"></div>
+
+    <script>
+      function calc() {
+        var txtv = window.document.querySelector("input#txtvel");
+        var res = window.document.querySelector("div#res");
+        var vel = Number.parseInt(txtv.value);
+        res.innerHTML = `<p>Velocidade atual: <strong>${vel}</strong> Km/h.`;
+        
+        var limit = 60;
+            if (vel > limit) {
+                res.innerHTML += `<p>Limite da via: <strong>${limit}</strong> Km/h. Devido a isso você será <strong>MULTADO</strong> por excesso de velocidade!</p>`; 
+            }
+            res.innerHTML += '<p>Use sempre capacete ou cinto de segurança!</p>'
+      }
+    </script>
+  </body>
+</html>
